@@ -61,9 +61,7 @@ async function initApp()
             title.textContent = movie.title;
 
             let info = document.createElement("p");
-            info.textContent = "Género: " + movie.genre + 
-                               " Año: " + movie.releaseYear +
-                               " Tipo: " + movie.type;
+            info.textContent = "Género: " + movie.genre + " Año: " + movie.releaseYear + " Tipo: " + movie.type;
 
             let status = document.createElement("p");
             status.textContent = movie.watched ? "Vista" : "No vista";
@@ -90,7 +88,7 @@ async function initApp()
     }
     catch(error)
     {
-        console.error("Ocurrió un error:", error);
+        console.error("error:", error);
     }
 }
 
